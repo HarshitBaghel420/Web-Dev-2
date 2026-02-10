@@ -2,17 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart_event_dashboard</title>
+    <title>Smart Event Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="todo">
-      <div class="eachlist">
-        <input type="text" id="inputbox" placeholder="Enter event name..." />
-        <button id="addbtn">Add</button>
+    <div class="page">
+      <div class="header">
+        <span class="badge">Smart Event Dashboard</span>
       </div>
-      <div id="list"></div>
+
+      <div class="container">
+        <div class="card">
+          <h2>Add New Event</h2>
+
+          <label>Event Title</label>
+          <input type="text" id="inputBox" />
+
+          <label>Event Date</label>
+          <input type="date" id="dateBox" />
+
+          <label>Category</label>
+          <select>
+            <option>Conference</option>
+            <option>Workshop</option>
+            <option>Meeting</option>
+            <option>Other</option>
+          </select>
+
+          <label>Description</label>
+          <textarea id="infoBox"></textarea>
+
+          <button id="addBtn">Add Event</button>
+        </div>
+
+        <div class="card">
+          <h2>My Events</h2>
+
+          <div class="actions">
+            <button onclick="clearEvents()">Clear All Events</button>
+            <button onclick="addSample()">Add Sample Event</button>
+          </div>
+
+          <div id="list" class="event-list">
+            <p class="empty">No events yet. Add your first event!</p>
+          </div>
+        </div>
+      </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
