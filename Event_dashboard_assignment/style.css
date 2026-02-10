@@ -1,42 +1,116 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* {
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
 
-.eachList{
-    display:  flex;
-    gap: 20px;
+      body {
+        margin: 0;
+        background: linear-gradient(135deg, #2ec4b6, #00b4d8);
+        min-height: 100vh;
+      }
 
-}
+      .page {
+        padding: 30px;
+      }
 
-.eachList p{
-    font-size: 20px;
-}
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
 
-#todo{
-    border: 2px solid black;
-    padding: 10px;
-    width: 500px;
-    height: 400px;
+      .badge {
+        background: #1f3c88;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 22px;
+        font-weight: 600;
+      }
 
-}
+      .container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
 
-#inputBox{
-    width: 300px;
-    height: 30px;
-    font-size: 20px;
-}
+      .card {
+        background: #fff4e8;
+        width: 420px;
+        padding: 25px;
+        border-radius: 14px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
 
-#list{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    margin-top: 30px;
-}
+      .card h2 {
+        margin-top: 0;
+        color: #1f3c88;
+      }
 
-button{
-    width: 100px;
-    font-size: 20px;
-}
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: 500;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 6px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+
+      button {
+        margin-top: 18px;
+        width: 100%;
+        padding: 12px;
+        background: #2ec4b6;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #22a6a0;
+      }
+
+      .actions {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 15px;
+      }
+
+      .actions button {
+        flex: 1;
+      }
+
+      .event-list {
+        font-size: 14px;
+      }
+
+      .event-list p {
+        margin: 6px 0;
+      }
+
+      .event-list hr {
+        border: none;
+        border-top: 1px solid #ddd;
+      }
+
+      .empty {
+        text-align: center;
+        color: #777;
+        margin-top: 40px;
+      }
